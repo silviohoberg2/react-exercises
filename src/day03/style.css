@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.schedule {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.schedule h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-left: 5px solid #555;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+}
+
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.session-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.session-card.online {
+  border-left: 6px solid blue;
+}
+
+.session-card.sold-out {
+  border-left: 6px solid red;
+}
+
+.session-card.few-seats {
+  border-left: 6px solid darkorange;
+}
+
+.session-card.highlight {
+  border: 2px solid gold;
+}
+
+.badge {
+  display: inline-block;
+  background-color: gold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .schedule {
+    padding: 15px;
+  }
+
+  .session-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.language {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.language.german {
+  background-color: #e3f2fd;
+}
+
+.language.english {
+  background-color: #e8f5e9;
+}
