@@ -1,0 +1,27 @@
+
+/* Allgemeine Gestaltung der Kurskarten */
+.course-card {
+  padding: 20px;
+  margin: 15px 0;
+  border: 2px solid;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+/* Grün - Noch keine Anmeldungen */
+.course-card-free {
+  background-color: #e0f5e0;
+  border-color: #4caf50;
+}
+
+/* Orange - Teilweise belegt */
+.course-card-partial {
+  background-color: #fff0d6;
+  border-color: #ff9800;
+}
+
+/* Rot - Ausgebucht */
+.course-card-full {
+  background-color: #ffe0e0;
+  border-color: #f44336;
+}
