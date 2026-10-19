@@ -1,7 +1,7 @@
-
 import { useState } from "react";
 import CourseList from "./CourseList.jsx";
 import RegistrationPanel from "./RegistrationPanel.jsx";
+import NameEffect from "./NameEffect.jsx";
 
 const courses = [
   {
@@ -43,6 +43,8 @@ function App() {
   return (
     <main>
       <h1>CoursePlanner</h1>
+
+      <NameEffect />
 
       <p>
         Teilnehmer gesamt: {totalParticipants}
