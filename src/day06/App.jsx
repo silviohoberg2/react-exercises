@@ -1,7 +1,9 @@
+
 import { useState } from "react";
 import CourseList from "./CourseList.jsx";
 import RegistrationPanel from "./RegistrationPanel.jsx";
 import NameEffect from "./NameEffect.jsx";
+import ParticipantManager from "./ParticipantManager.jsx";
 
 const courses = [
   {
@@ -24,7 +26,7 @@ const courses = [
 function App() {
   const [registrations, setRegistrations] = useState([]);
 
-  // Gesamtzahl aller Teilnehmer berechnen
+  // Gesamtzahl aller Kursteilnehmer berechnen
   const totalParticipants = registrations.reduce(
     (total, registration) =>
       total + Number(registration.participants),
@@ -61,6 +63,10 @@ function App() {
         setRegistrations={setRegistrations}
         onDelete={handleDeleteRegistration}
       />
+
+      <hr />
+
+      <ParticipantManager />
     </main>
   );
 }
